@@ -36,4 +36,4 @@ I think this part is quite clear, so far so good, no confusing part.
 
 This method is less frequently used and not conveinet. I not recommend to use it in this situation. 
 
-**I think there are more and more answers can be found in the web. If I have sucked in other special problems & I fixed it & the answers are hard to find & I have time to update this page, I will update it latter...**
+**I think there are more and more answers can be found on the web. If I have sucked in other special problems & I fixed it & the answers are hard to find & I have time to update this page, I will update it latter...**
