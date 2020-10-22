@@ -8,3 +8,15 @@ This part is only about the tricks in pruning and stop gradient. (But they are h
 ### Such as：
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/1.PNG)
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/2.PNG)
+
+2.  【Fix some layers, only updates the other layers.】
+
+Why we need to only update some layers? In transfer learning, pre-training, or Decopuling (a SOTA method for long-tailed data), we need use this technic. 
+
+And I think this technic may be a very common method to use in other experiment, frequently test this idea, you may find you things.
+
+Method1:
+![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/3.PNG)
+
+Method2:
+![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/4.PNG)
