@@ -13,29 +13,28 @@ This part is only about the tricks in pruning and stop gradient. (But they are h
 
 **2.  【Fix some layers, only updates the other layers.】**
 
-Why we need to only update some layers? In transfer learning, pre-training, or Decopuling (a SOTA method for long-tailed data), we need use this technic. 
+Why we need to only update some layers? In transfer learning, pre-training, or Decopuling (a SOTA method for long-tailed data), we need use this technic. And I think this technic may be a very common method to use in other experiment, frequently test this idea, you may find you things.
 
-And I think this technic may be a very common method to use in other experiment, frequently test this idea, you may find you things.
-
-**Method1 (Define the variable that is trainable)**
+**Method 1 (Define the variable that is trainable)**
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/3.PNG)
 
 If this variable is defined as trainable, this variable will get trained. 
 
-**Notes: **
+**Notes**
 
 **1.If you didn't define it as trainable, the defalut setting is trainable. But you can define it as not trainable, to avoid training on this variable.**
 
 **2.For the tf.constant variable, all of this variable is a constant, they can't be trained, no matter how you redefine it.**
 
-**Method2 (Define the scope of layer that need to be trainable)**
+**Method 2 (Define the scope of layer that need to be trainable)**
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/4.PNG)
 
-**Notes: **
+**Notes**
 
 **I think this part is quite clear, so far so good, no confusing part.**
 
-**Method3 (Save the model and reload it)**
+**Method 3 (Save the model and reload it)**
  
 This method is less frequently used and not conveinet. I not recommend to use it in this situation. 
+
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/5.PNG)
