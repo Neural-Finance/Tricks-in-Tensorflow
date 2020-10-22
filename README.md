@@ -18,12 +18,13 @@ Why we need to only update some layers? In transfer learning, pre-training, or D
 **Method 1 (Define the variable that is trainable)**
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/3.PNG)
 
+```
 Notes
 
 1.If you didn't define it as trainable, the defalut setting is trainable. But you can define it as not trainable, to avoid training on this variable.
 
 2.For the tf.constant variable, all of this variable is a constant, they can't be trained, no matter how you redefine it.
-
+```
 
 **Method 2 (Define the scope of layer that need to be trainable)**
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/4.PNG)
