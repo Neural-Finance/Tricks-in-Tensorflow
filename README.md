@@ -26,6 +26,7 @@ Why we need to only update some layers? In transfer learning, pre-training, or D
 
 
 **Method 2 (Define the scope of layer that need to be trainable)**
+
 ![Image text](https://github.com/ThuAlexFang/Tricks-in-Tensorflow/blob/master/fig/4.PNG)
 
 I think this part is quite clear, so far so good, no confusing part.
